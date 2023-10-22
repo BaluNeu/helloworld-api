@@ -9,3 +9,7 @@ app.get('/hello', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+app.post('/hello', (req, res) => {
+    res.json({ message: 'Hello, World!' });
+});
